@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Farbod Pet, a Budapest pet-shop concept. Explore a considered selection for dogs, cats, fish and birds.">
+  <meta name="theme-color" content="#087d75">
+  <title>Farbod Pet | Budapest Pet Shop</title>
+  <link rel="icon" type="image/svg+xml" href="assets/mark.svg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#products">Skip to products</a>
+  <div class="announcement"><div class="container"><span>A little care. A better everyday.</span><span>Budapest pet shop <span class="separator">/</span> Showroom demo</span></div></div>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Farbod Pet home"><img src="assets/mark.svg" alt="" width="44" height="44"><span><strong>farbod<span class="brand-light">pet</span><span class="brand-dot">.</span></strong><small>BUDAPEST PET SHOP</small></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu <span aria-hidden="true">☰</span></button>
+      <nav id="site-nav" aria-label="Main navigation"><a href="#products">Our collection</a><a href="#about">Our story</a><a href="#showroom">The showroom</a><a class="nav-contact" href="#contact">Get in touch</a></nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy"><p class="eyebrow"><span></span> FOR PETS. FOR THEIR PEOPLE.</p><h1 id="hero-title">Good things.<br>For their <em>everyday.</em></h1><p class="hero-lead">Thoughtfully chosen essentials for dogs, cats, fish and birds. Find what fits their world, with a little help from Farbod.</p><div class="hero-actions"><a class="button primary" href="#products">Explore the collection</a><a class="quiet-link" href="#about">Meet Farbod Pet</a></div><div class="hero-note"><span class="note-rule"></span><p>From daily walks to quieter moments.<br><strong>Care starts with the little things.</strong></p></div></div>
+      <div class="hero-media"><img src="assets/hero.jpg" alt="A golden retriever and a tabby cat in a bright, calm pet showroom" width="1200" height="900" fetchpriority="high"><div class="image-caption"><span>THE FARBOD PET EDIT</span><strong>A place for their everyday.</strong></div><span class="image-number">01 / EVERYDAY COMPANIONS</span></div>
+    </section>
+    <div class="values-strip container"><div><span class="value-number">01</span><span>Four pets. One thoughtful collection.</span></div><div><span class="value-number">02</span><span>Simple choices, useful details.</span></div><div><span class="value-number">03</span><span>A personal touch, from Budapest.</span></div></div>
+    <section class="collection section container" id="products" aria-labelledby="collection-title">
+      <div class="section-heading"><div><p class="eyebrow">THE COLLECTION</p><h2 id="collection-title">Their world, well cared for.</h2></div><p>Start with your pet.<br>Find the essentials that feel right.</p></div>
+      <div class="category-grid" aria-label="Browse by pet">
+        <button type="button" class="category-tile" data-category="dogs" aria-pressed="false"><span class="category-top">01 <span>WALK · PLAY · REST</span></span><strong>For dogs</strong><span>Everyday adventures, covered.</span><small>3 essentials</small></button>
+        <button type="button" class="category-tile" data-category="cats" aria-pressed="false"><span class="category-top">02 <span>SCRATCH · PLAY · SETTLE</span></span><strong>For cats</strong><span>A little more comfort at home.</span><small>3 essentials</small></button>
+        <button type="button" class="category-tile" data-category="fish" aria-pressed="false"><span class="category-top">03 <span>FEED · FILTER · EXPLORE</span></span><strong>For fish</strong><span>Good foundations for their world.</span><small>3 essentials</small></button>
+        <button type="button" class="category-tile" data-category="birds" aria-pressed="false"><span class="category-top">04 <span>PERCH · FEED · DISCOVER</span></span><strong>For birds</strong><span>Small details for busy little lives.</span><small>3 essentials</small></button>
+      </div>
+      <div class="catalog-toolbar" id="catalog">
+        <div class="filter-chips" role="group" aria-label="Filter by pet"><button class="filter-chip active" data-filter="all" aria-pressed="true">All pets</button><button class="filter-chip" data-filter="dogs" aria-pressed="false">Dogs</button><button class="filter-chip" data-filter="cats" aria-pressed="false">Cats</button><button class="filter-chip" data-filter="fish" aria-pressed="false">Fish</button><button class="filter-chip" data-filter="birds" aria-pressed="false">Birds</button></div>
+        <label class="search-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg><span class="sr-only">Search products</span><input id="product-search" type="search" placeholder="Search the collection" autocomplete="off"></label>
+      </div>
+      <div class="results-bar"><p id="result-count" role="status" aria-live="polite">12 considered essentials</p><label>Sort by <select id="sort"><option value="featured">Featured</option><option value="price-asc">Price: low to high</option><option value="price-desc">Price: high to low</option><option value="name">Name: A–Z</option></select></label></div>
+      <div id="product-grid" class="product-grid"></div>
+      <div id="empty-state" class="empty-state" hidden><h3>No matches just yet.</h3><p>Try a different search or browse all pets.</p><button class="button primary" type="button" id="reset-filters">Clear search &amp; filters</button></div>
+      <noscript><p class="notice">Please enable JavaScript to browse the 12-product collection, search and view details.</p></noscript>
+      <p class="catalog-note">A preview of our collection. Products, images and prices are illustrative; availability is not confirmed.</p>
+    </section>
+    <section class="about-section" id="about" aria-labelledby="about-title"><div class="container about-grid"><div><p class="eyebrow">FARBOD + BUDAPEST + PETS</p><h2 id="about-title">A personal approach<br>to pet essentials.</h2></div><div class="about-copy"><p>Farbod Pet brings a simple idea to Budapest: make choosing for your pet feel easy. A smaller, considered collection. Clear product details. Room to find what works for your companion.</p><p>From a comfortable harness to a favourite perch, our focus is on the everyday things that make a difference.</p><div class="experience"><strong>6<span>+</span></strong><div><b>years of pet-care experience*</b><span>A little knowledge. A lot of care.</span></div></div><small class="demo-footnote">*Proposed brand line for this demo. Business experience must be verified before launch.</small></div></div></section>
+    <section class="section container showroom" id="showroom" aria-labelledby="showroom-title"><div class="showroom-panel"><div class="showroom-identity"><img src="assets/mark.svg" alt="" width="76" height="76"><p>FARBOD PET</p><span>BUDAPEST, HUNGARY</span><div class="identity-rule"></div><small>A considered collection.<br>A more personal experience.</small></div><div class="showroom-copy"><p class="eyebrow">THE SHOWROOM APPROACH</p><h2 id="showroom-title">Take a closer look.<br>Choose at your own pace.</h2><p>Explore the collection, compare sizes and materials, and put together a product inquiry. No account needed.</p><dl><div><dt>Where</dt><dd>Budapest, Hungary</dd></div><div><dt>Visiting</dt><dd>Address and opening hours to be announced.</dd></div></dl><a class="quiet-link" href="#contact">Ask about a product</a></div></div></section>
+    <section class="contact-section" id="contact" aria-labelledby="contact-title"><div class="container contact-grid"><div class="contact-copy"><p class="eyebrow">LET’S TALK PETS</p><h2 id="contact-title">A little help<br>finding the right thing.</h2><p>Have a product in mind? Tell us about your pet and what you’re looking for.</p><div class="contact-details"><span>Based in</span><strong>Budapest, Hungary</strong><span>Email &amp; phone</span><p>Contact details coming soon.</p></div><div class="demo-note"><b>You’re viewing a showroom demo.</b><p>The form previews your inquiry on this device. Nothing is sent or saved.</p></div></div>
+      <form id="inquiry-form" class="inquiry-form"><div class="form-heading"><h3>Your product inquiry</h3><span>DEMO</span></div><div class="form-row"><label>Your name<input name="name" type="text" placeholder="Full name" autocomplete="name" maxlength="100" required></label><label>Email address<input name="email" type="email" placeholder="you@example.com" autocomplete="email" maxlength="160" required></label></div><label>Who are you shopping for?<select name="pet" required><option value="">Choose your pet</option><option value="dogs">Dog</option><option value="cats">Cat</option><option value="fish">Fish</option><option value="birds">Bird</option></select></label><label>Your message<textarea name="message" rows="4" placeholder="A product, a size, or a question. We’re all ears." maxlength="2000" required></textarea></label><button class="button primary" type="submit">Preview inquiry</button><p class="form-note">Demo only · No message will be sent</p><div class="inquiry-preview" id="inquiry-preview" hidden tabindex="-1"><h4>Your inquiry preview</h4><p id="preview-content"></p><small>Not sent. Live contact details can be connected when the shop is ready.</small></div></form>
+    </div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-main"><a class="brand" href="#top" aria-label="Farbod Pet home"><img src="assets/mark.svg" alt="" width="44" height="44"><span><strong>farbod<span class="brand-light">pet</span><span class="brand-dot">.</span></strong><small>BUDAPEST PET SHOP</small></span></a><p>Good things. For their everyday.</p><a href="#top">Back to top</a></div><div class="container footer-bottom"><span>© 2026 Farbod Pet. Brand &amp; showroom concept.</span><span>Dogs · Cats · Fish · Birds</span></div></footer>
+  <dialog id="product-modal" class="product-modal" aria-labelledby="modal-title"><button class="modal-close" type="button" aria-label="Close product details">×</button><div id="modal-content"></div></dialog>
+</body>
+</html>
